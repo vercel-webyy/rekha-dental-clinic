@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-sans)', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+      },
       colors: {
         brand: {
           50: '#f0f9ff',
@@ -23,42 +26,18 @@ module.exports = {
         },
         tealbrand: {
           50: '#f0fdf4',
-          100: '#dcfce7',
+          100: '#ccfbf1',
           400: '#2dd4bf',
-          500: '#0d9488',
+          500: '#14b8a6',
           600: '#0d9488',
           700: '#0f766e',
+          800: '#115e59',
         },
-        gold: {
-          400: '#fbbf24',
-          500: '#f59e0b',
-        }
-      },
-      fontFamily: {
-        sans: ['var(--font-sans)', 'Inter', 'sans-serif'],
       },
       boxShadow: {
-        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',
-        'glass-hover': '0 12px 40px 0 rgba(13, 148, 136, 0.15)',
-        'premium': '0 20px 40px -15px rgba(2, 132, 199, 0.12)',
-      },
-      animation: {
-        'float': 'float 6s ease-in-out infinite',
-        'pulse-subtle': 'pulseSubtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'shine': 'shine 2s linear infinite',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
-        },
-        pulseSubtle: {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.85' },
-        },
-        shine: {
-          '100%': { left: '125%' },
-        }
+        'soft': '0 10px 30px -10px rgba(0, 0, 0, 0.05)',
+        'premium': '0 20px 40px -15px rgba(13, 148, 136, 0.12)',
+        'floating': '0 25px 50px -12px rgba(15, 23, 42, 0.15)',
       }
     },
   },
